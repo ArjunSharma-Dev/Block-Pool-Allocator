@@ -135,7 +135,6 @@ bool pool_init(const size_t* block_sizes, size_t block_size_count)
 
 void* pool_malloc(size_t n)
 {
-// Implement me!
     int i;
     for (i=0; i<block_size_count_global; i++)
     {
@@ -173,7 +172,6 @@ void* pool_malloc(size_t n)
 
 void pool_free(void* ptr)
 {
-// Implement me!
     if (ptr == NULL)
     {
         printf("FREE ERROR: Null pointer\n");
